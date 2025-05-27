@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AnuBha Photography by Bhavin</title>
   <meta name="description" content="AnuBha Photography - Capturing moments, creating memories by Bhavin Katabathuni">
-  <link rel="icon" type="image/x-icon" href="./assets/favicon_ab.ico" />
+  <link rel="icon" type="image/x-icon" href="./dist/assets/favicon_ab.ico" />
 
   <!-- Tailwind & Fonts -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
   <link rel="stylesheet" href="dist/output.css" />
   <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/xau8deh.css">
+
 
   <!-- Alpine.js -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -20,16 +22,52 @@
   <!-- Fancybox -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <style>
+    .masonry-grid {
+      column-count: 1;
+      column-gap: 1rem;
+    }
+  
+    @media (min-width: 640px) {
+      .masonry-grid {
+        column-count: 2;
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .masonry-grid {
+        column-count: 3;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .masonry-grid {
+        column-count: 4;
+      }
+    }
+  
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+    }
+  </style>
+  
+
+
+  <!-- Masonry JS
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+
 </head>
 
-<body class="dark:bg-black bg-white text-black dark:text-white px-5 md:px-20">
+<body class="dark:bg-black bg-white h-screen text-black dark:text-white px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
   <!-- Navbar -->
   <header class="flex w-full overflow-hidden pt-10 pb-1">
     
     <nav id="nav" x-data="{ open: false }" role="navigation" class="w-full">
       <div class="container mx-auto flex flex-wrap items-center md:flex-no-wrap">
         <div class="mr-4 md:mr-8">
-          <a href="index.html" class="text-2xl font-signika font-bold">AnuBha Photography</a>
+          <a href="index.html" class="text-2xl font-ivymode font-bold">ANUBHA PHOTOGRAPHY</a> <p class="text-sm cursive-text">by Bhavin</p> 
         </div>
         <div class="ml-auto md:hidden flex items-center justify-start">
           <button onclick="menuToggle()" @click="open = !open"
@@ -54,18 +92,19 @@
           <ul id="ulMenu"
             class="flex flex-col duration-300 ease-out md:space-x-5 sm:transition-none mt-5 md:flex-row md:items-center md:ml-auto md:mt-0 md:pt-0 md:border-0">
             <li class="group transition duration-300">
-              <a href="../index.html" class="font-signika text-2xl tap-highlight-transparent">PORTFOLIO
+              <a href="index.html" class="font-ivymode text-2xl tap-highlight-transparent">PORTFOLIO
                 <span class="hidden md:block h-0.5 bg-black dark:bg-white"></span>
+                
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="dist/about_me.html" class="font-signika text-2xl tap-highlight-transparent">ABOUT
+              <a href="./dist/about_me.html" class="font-ivymode text-2xl tap-highlight-transparent">ABOUT
                 <span
-                  class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
+                class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
             </li>
             <li class="group transition duration-300">
-              <a href="dist/contact.html" class="font-signika text-2xl tap-highlight-transparent">CONTACT
+              <a href="./dist/contact.html" class="font-ivymode text-2xl tap-highlight-transparent">CONTACT
                 <span
                   class="hidden md:block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black dark:bg-white"></span>
               </a>
@@ -78,36 +117,86 @@
 
   <!-- Content -->
   <main class="container mx-auto">
-    <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
-    <section>
-      <div class="flex flex-wrap w-full">
-        <!-- Repeat structure for each image -->
-        <div class="w-full md:w-1/2 p-1">
-          <div class="overflow-hidden h-full w-full">
-            <a href="./dist/assets/1-_DSC5650.jpg" data-fancybox="gallery">
-              <img alt="Beaches & Mountains" class="block w-full object-cover object-center transition duration-500 transform hover:scale-110" src="./dist/assets/1-_DSC5650.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 p-1">
-          <div class="overflow-hidden h-full w-full">
-            <a href="./dist/assets/_DSC4497.jpg" data-fancybox="gallery">
-              <img alt="Shade on the Divine" class="block w-full object-cover object-center transition duration-500 transform hover:scale-110" src="./dist/assets/_DSC4497.jpg" />
-            </a>
-          </div>
+    <h1 class="font-ivymode text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
+
+
+
+    <section class="px-4 py-10">
+    <div class="masonry-grid">      
+      <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/8-DSC02512.jpg" data-fancybox="gallery" class="mb-4 block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/8-DSC02512.jpg" loading="lazy" class="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-105" />
+      </a>
+      </div>
+
+      <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/1-_DSC5650.jpg" data-fancybox="gallery" class="mb-4 block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/1-_DSC5650.jpg" loading="lazy" class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+      </div>
+
+      <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/6-DSC04029-Edit.jpg" data-fancybox="gallery" class="mb-4 block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/6-DSC04029-Edit.jpg" loading="lazy" class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+    </div>
+    
+    <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/_DSC4497.jpg" data-fancybox="gallery" class="mb-4 block overflow-hidden rounded-lg shadow-md">
+          <img src="./dist/assets/_DSC4497.jpg" loading="lazy"
+               class="w-full h-auto rounded-lg object-cover transition-transform duration-500 hover:scale-105" />
+        </a>
+      </div>
+
+    <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/4-_DSC5348.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/4-_DSC5348.jpg" loading="lazy" class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+    </div>
+    
+    <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/Image.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/Image.jpg" loading="lazy"
+             class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+    </div>
+
+    <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/IMG_0244.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+          <img src="./dist/assets/IMG_0244.jpg" loading="lazy"
+               class="w-full h-auto rounded-lg object-cover transition-transform duration-500 hover:scale-105" />
+        </a>
         </div>
 
-        <div class="w-full md:w-1/2 p-1">
-          <div class="overflow-hidden h-full w-full">
-            <a href="./dist/assets/2_DSC5597.jpg" data-fancybox="gallery">
-              <img alt="Bhavin photography" class="block w-full object-cover object-center transition duration-500 transform hover:scale-110" 
-              src="./dist/assets/2-_DSC5597.jpg" />
-            </a>
-          </div>
-        </div>
-        <!-- Add more images here using the same structure -->
+        <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/IMG_0911.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+          <img src="./dist/assets/IMG_0911.jpg" loading="lazy"
+               class="w-full h-auto rounded-lg object-cover transition-transform duration-500 hover:scale-105" />
+        </a>
+    </div>
+
+    <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+        <a href="./dist/assets/7-DSC03832.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/7-DSC03832.jpg" loading="lazy" class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+    </div>
+    
+      <div class="masonry-item overflow-hidden rounded-lg shadow-md">
+    
+        <a href="./dist/assets/DSC01740.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">
+        <img src="./dist/assets/DSC01740.jpg" loading="lazy" class="w-full h-auto rounded-lg object-cover hover:scale-105 transition-transform duration-500" />
+      </a>
+    </div>
+    
+    
+    
+        <!-- Add more as needed/ Below is the dump tag-->
+      <!--    <a href="./dist/assets/IMG_0001.jpg" data-fancybox="gallery" class="block overflow-hidden rounded-lg shadow-md">-->
+      <!--    <img src="./dist/assets/IMG_0001.jpg" loading="lazy" class="w-full rounded-lg object-cover hover:scale-105 transition-transform duration-500" />-->
+      <!--  </a>-->
       </div>
     </section>
+    
   </main>
 
   <!-- Footer -->
@@ -115,7 +204,7 @@
     <div class="max-w-screen-xl py-16 mx-auto">
       <div class="grid grid-cols-1 gap-8 text-center mx-auto">
         <div>
-          <p class="font-signika"><b>BHAVIN KATABATHUNI</b></p>
+          <p class="font-serif"><b>BHAVIN KATABATHUNI</b></p>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
             Hannover, Germany<br /> bhavin2897@gmail.com
           </p>
