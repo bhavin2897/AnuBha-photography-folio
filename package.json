@@ -1,0 +1,23 @@
+{
+  "name": "anubha-photography-folio",
+  "version": "1.0.0",
+  "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavin2897/AnuBha-photography-folio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhavin2897/AnuBha-photography-folio/issues"
+  },
+  "homepage": "https://github.com/bhavin2897/AnuBha-photography-folio#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  }
+}
