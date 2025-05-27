@@ -45,7 +45,7 @@ This project is a web-based portfolio that beautifully showcases the photography
 
 Create your own page with one click on [Netlify](https://app.netlify.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/JoaoFranco03/photography-portfolio)
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/bhavin2897/AnuBha-photography-folio)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎯 Getting Started <a name="getting-started"></a>
