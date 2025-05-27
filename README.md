@@ -19,53 +19,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/JoaoFranco03/photography-portfolio">
-    <img src="dist/assets/Logo.jpg" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Photography Portfolio</h3>
-
-  <p align="center">
-    A Website created using Tailwind CSS, HTML, CSS <br /> and JavaScript that can be used as a Photography Portfolio.
-    <br />
-    <br />
-    <a href="https://photography-portfolio-joaofranco03.netlify.app/">View Demo</a>
-    <br />
-    <br />
-    
-  </p>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li>
-      <a href="#built-with">Built With</a>
-      <ul>
-        <li><a href="#html-badge">HTML</a></li>
-        <li><a href="#css-badge">CSS</a></li>
-        <li><a href="#js-badge">JavaScript</a></li>
-        <li><a href="#tailwind-badge">Tailwind CSS</a></li>
-      </ul>
-    </li>
-    <li><a href="#quick-start">Quick Start</a></li>
-    <li><a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
