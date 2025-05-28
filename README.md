@@ -21,6 +21,10 @@
 
 
 
+### Link to Check the forms 
+It uses Netlify forms to use the contact form.
+
+https://app.netlify.com/projects/anubha-photography/forms/6835cd751f7b0900084cd47f 
 
 <!-- ABOUT THE PROJECT -->
 
