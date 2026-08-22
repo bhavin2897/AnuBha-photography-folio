@@ -1,10 +1,12 @@
 {
   "name": "anubha-photography-folio",
   "version": "1.0.0",
-  "description": "<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->",
+  "description": "AnuBha Photography portfolio by Bhavin Katabathuni",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/build-gallery.mjs",
+    "start": "node scripts/dev-server.mjs",
+    "test": "node scripts/build-gallery.mjs --check"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,8 @@
   "homepage": "https://github.com/bhavin2897/AnuBha-photography-folio#readme",
   "devDependencies": {
     "tailwindcss": "^4.1.7"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
   }
 }

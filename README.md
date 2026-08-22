@@ -21,6 +21,22 @@
 
 
 
+## Managing the portfolio
+
+The homepage gallery is generated automatically from the `photos` folder.
+
+1. Add or remove photographs in `photos/`.
+2. Use numbered, descriptive filenames such as `01-hannover-sunset.jpg` to control their order.
+3. Run `npm start` and open `http://localhost:4173`.
+
+The app watches the folder and creates responsive AVIF, WebP and JPEG versions whenever it changes. Run `npm run build` once before deploying if the development server is not running.
+
+Netlify is configured to run the gallery build automatically on every Git deployment, so generated images do not need to be committed.
+
+## Contact form email notifications
+
+The contact form is handled by Netlify Forms. In the Netlify dashboard, open **Project configuration → Notifications → Emails and webhooks → Form submission notifications** and add `bhavin2897@gmail.com`. Submissions are also retained in the Netlify Forms dashboard.
+
 ### Link to Check the forms 
 It uses Netlify forms to use the contact form.
 
